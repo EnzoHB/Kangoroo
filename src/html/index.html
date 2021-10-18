@@ -7,6 +7,7 @@
     <title>Kangoroo</title>
     <link href='../css/style.css' rel='stylesheet'>
     <link href='../css/cardStyle.css' rel='stylesheet'>
+    <script src='../js/index.js' type='module'></script>
 </head>
 <body>
     <div class='main_dashboard'>
@@ -26,18 +27,36 @@
                 <p>118.25</p>
             </div>
             <div class='decoration_section'>
-                <div class='movable_stripe'>
-
-                </div>
-                <div class='movable_stripe'>
-
-                </div>
-                <div class='movable_stripe'>
-
-                </div>
+                <div class='short strip blue'></div>
+                <div class='long strip blue'></div>
+                <div class='long strip orange'></div>
+                <div class='short strip orange'></div>
+                <div class='short strip purple'></div>
+                <div class='long strip purple'></div>
             </div>
-        <div class='timer'></div>
-        <div class='container_for_quantity_cards'></div>
+        <div class='timer'>01: 15 min</div>
+        <div class='container_for_quantity_cards'>
+            <div class='quantity_card a'>
+                <div class='letter_'>A</div>
+                <div class='number'>06</div>
+            </div>
+            <div class='quantity_card b'>
+                <div class='letter_'>B</div>
+                <div class='number'>06</div>
+            </div>
+            <div class='quantity_card c'>
+                <div class='letter_'>C</div>
+                <div class='number'>06</div>
+            </div>
+            <div class='quantity_card d'>
+                <div class='letter_'>D</div>
+                <div class='number'>06</div>
+            </div>
+            <div class='quantity_card e'>
+                <div class='letter_'>E</div>
+                <div class='number'>06</div>
+            </div>
+        </div>
         <div class='test_controls'>
             <div class='button'>
                 <object class='end' data="../svg/end.svg"></object>
@@ -50,20 +69,23 @@
             </div>
         </div>
         <div class='comment_container'>
-            <div class='question_number_1'></div>
+            <div class='center_comment'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque tincidunt dui et lobortis. Maecenas vulputate finibus dui, quis iaculis tortor laoreet at. Morbi ac cursus felis, non accumsan est. Etiam vel lacus sagittis augue tempor porta ac quis ligula.</div>
+            <div class='question_number_1'>05</div>
         </div>
         <div class='container_for_that_other_stuff_cards'>
             <div class='green ones'>
-                <div class='square'></div>
-                <div class='quantity'></div>
+                <div class='square'>
+                    <div class='inner_square green'></div>
+                </div>
+                <div class='quantity'>10</div>
             </div>
             <div class='yellow ones'>
-                <div class='square'></div>
-                <div class='quantity'></div>
+                <div class='square'><div class='inner_square yellow'></div></div>
+                <div class='quantity'>10</div>
             </div>
             <div class='red ones'>
-                <div class='square'></div>
-                <div class='quantity'></div>
+                <div class='square'><div class='inner_square red'></div></div>
+                <div class='quantity'>10</div>
             </div>
         </div>
     </div>
@@ -95,6 +117,5 @@
             <div class="question_number">01</div>
         </div>
     -->
-    <script src='../js/index.js' type='module'></script>
 </body>
 </html>

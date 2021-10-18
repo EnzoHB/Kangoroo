@@ -2,10 +2,6 @@ import keyboard from "./keyboard.js";
 import AlternativesCard from "./AlternativeCard.js";
 
 const container = document.querySelector('.cards_container');
-
-const availableIndicators = ['#00FF29', '#FAFF00', '#FF0000']
-const availableAlternatives = [' ', 'A', 'B', 'C', 'D', 'E'];
-
 const list = [];
 
 for (let i = 1; i <= 10; i++) {
@@ -13,16 +9,23 @@ for (let i = 1; i <= 10; i++) {
     const options = {
         number: i,
         comment: '',
-        alternatives: 0/*Math.floor(Math.random() * 6) /**/,
-        indicators: 0 /**/,
-        absences: 0,
     };
 
-    const alternative = new AlternativesCard(options);
+    const card = new AlternativesCard(options);
 
-    console.log(alternative);
+    repeat(random(10), 'card.alternative.next()');
+    repeat(random(10), 'card.indicator.next()');
+    
+    function repeat(times, code) {
+        for (let i = 0; i < times; i++) eval(code);
+    };
 
-    list.push(alternative.container);
+    function random(range) {
+        return Math.floor(Math.random() * range);
+    };
+
+    list.push(card.container);
+    console.log(card);
 };
 
 container.append(...list)

@@ -86,7 +86,44 @@ body {
     height: 90px;
     top: 130px;
     left: 481px;
-    background: grey
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.quantity_card {
+    position: sticky;
+    width: 55px;
+    height: 90px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.letter_ {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.number {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: #8A8A8A;
 }
 
 .header {
@@ -169,6 +206,41 @@ body {
     background: #DEDEDE;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.strip {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    background: #FF4545;
+}
+
+.short {
+    width: 73px;
+    height: 25px;
+    margin: 0;
+}
+
+.long {
+    width: 290px;
+    height: 25px;
+    margin: 0;
+}
+
+.blue {
+    background-color: #00D1FF;
+}
+
+.orange {
+    background-color: #FFAA47;
+}
+
+.purple {
+    background-color: #C728FF;
 }
 
 .comment_container {
@@ -230,20 +302,8 @@ body {
     background: #DEDEDE;
     border-radius: 7px;
     margin: auto;
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
-}
-
-
-.container_for_that_other_stuff_cards {
-    position: absolute;
-    top: 555px;
-    left: 481px;
-
-    width: 360px;
-    height: 50px;
-    border-radius: 8px;
     display: flex;
-    flex-wrap: wrap;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
 }
 
 .main_interactive_container {
@@ -281,3 +341,88 @@ body {
     background: #DEDEDE;
 }
 
+.container_for_that_other_stuff_cards {
+    position: absolute;
+    top: 555px;
+    left: 481px;
+
+    width: 360px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;;
+}
+
+.square {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner_square {
+    height: 65%;
+    width: 65%;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+
+.inner_square.red {
+    background: #F75959;
+}
+
+.inner_square.yellow {
+    background: #DDE049;
+}
+
+.inner_square.green {
+    background: #49E06A;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    align-items: center;
+    color: white;
+}
+
+.quantity {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.center_comment {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: justify;
+    height: 80%;
+    width: 80%;
+}
+
+.comment_container {
+    position: absolute;
+    height: 290px;
+    width: 360px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    left: 481px;
+    top: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question_number_1 {
+    position:absolute;
+    bottom: 2px;
+    right: 6px;
+}
