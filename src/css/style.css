@@ -1,0 +1,283 @@
+.disable-select {
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/reemkufi/v11/2sDPZGJLip7W2J7v7wQZZE1I0yCmYzzQtuZnIGaV3w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+    background: #989898;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.main_dashboard {
+    position: absolute;
+    width: 885px;
+    height: 625px;
+
+    background: #FDE0E0;
+    border-radius: 9px;
+    top: 22px;
+    left: 22px;
+}
+
+.heading {
+    position: absolute;
+    width: 400px;
+    height: 75px;
+    left: 44px;
+    top: 17px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    text-align: center;
+}
+
+.main_heading {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 3px;
+}
+
+.sub_heading {
+    margin: 0;
+    padding: 0;
+    font-size:15px;
+    position: relative;
+    bottom: 6px;
+}
+
+.timer {
+    position: absolute;
+    left: 481px;
+    top: 17px;
+    width: 360px;
+    height: 75px;
+
+    background: #22ffda;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.test_info {
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    top: 130px;
+    left: 44px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 21px;
+    text-align: center;
+    margin: auto;
+}
+
+.container_for_quantity_cards {
+    position: absolute;
+    width: 360px;
+    height: 90px;
+    top: 130px;
+    left: 481px;
+    background: grey
+}
+
+.header {
+    width: 400px;
+    height: 45px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin-bottom: 0 0 6px 0;
+    text-align: center;
+}
+
+.header > h2 {
+    font-size: 30px;
+    margin: auto;
+    font-weight: normal;
+}
+
+.year {
+    width: 92px;
+    height: 31px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin: 6px 5px 0 0;
+}
+
+.level {
+    width: 92px;
+    height: 31px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin: 6px 5px 0;
+}
+
+.name {
+    width: 196px;
+    height: 31px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    margin: 6px 0 0 5px;
+}
+
+.total_points {
+    position: absolute;
+    top: 245px;
+    left: 44px;
+    width: 400px;
+    height: 140px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.total_points > p {
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.decoration_section {
+    position: absolute;
+    top: 405px;
+    left: 44px;
+    width: 400px;
+    height: 140px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.comment_container {
+    position: absolute;
+    height: 290px;
+    width: 360px;
+
+    background: #DEDEDE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    left: 481px;
+    top: 245px;
+}
+
+.test_controls {
+    position: absolute;
+    top: 565px;
+    left: 44px;
+
+    width: 400px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    position: sticky;
+    width: 120px;
+    height: 40px;
+    background: #FF4545;
+    border-radius: 12px;
+    margin: auto;
+}
+
+.button > object {
+    position: absolute;
+}
+
+.end {
+    top: 8px;
+    left: 40px;
+}
+
+.pause {
+    top: 8px;
+    left: 51px;
+}
+
+.restart {
+    top: 3px;
+    left: 37px;
+}
+
+.ones {
+    position: sticky;
+    width: 110px;
+    height: 50px;
+    background: #DEDEDE;
+    border-radius: 7px;
+    margin: auto;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+
+
+.container_for_that_other_stuff_cards {
+    position: absolute;
+    top: 555px;
+    left: 481px;
+
+    width: 360px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main_interactive_container {
+    position: absolute;
+    width: 420px;
+    height: 615px;
+    top: 22px;
+    left: 925px;
+}
+
+.cards_container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    height: 530px;
+}
+
+.container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.swipe_difficulty_button {
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background: #DEDEDE;
+}
+

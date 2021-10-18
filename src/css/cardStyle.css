@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/reemkufi/v11/2sDPZGJLip7W2J7v7wQZZE1I0yCmYzzQtuZnIGaV3w.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.outer_box {
+    width: 450px;
+    height: 225px;
+
+    background: #ffcdcd;
+    border-radius: 20px;
+    position: sticky;
+    zoom: 0.43;
+}
+
+.letter_square {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    width: 180px;
+    height: 180px;
+
+    background: #FFF5F5;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.pseudo_letter_square:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pseudo_letter_square {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    width: 180px;
+    height: 180px;
+
+    text-align: center;
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 150px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.letter {
+    margin: auto;
+}
+
+.score_indicator {
+    position: absolute;
+    top: 22px;
+    left: 242px;
+    width: 180px;
+    height: 60px;
+
+    background: #FFF5F5;
+    opacity: 0.6;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.score_indicator:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.balloon {
+    position: absolute;
+    top: 107px;
+    left: 239px;
+}
+
+.pseudo_balloon {
+    position: absolute;
+    width: 120px;
+    height: 95px;
+    top: 107px;
+    left: 244px;
+}
+
+.lines {
+    position: absolute;
+    left: 17px;
+    width: 85px;
+    height: 0px;
+
+    background: #DEBFBF;
+    border: 1px solid #DEBFBF;
+}
+
+.lines.a {
+    top: 27px;
+}
+
+.lines.b {
+    top: 37px;
+}
+
+.lines.c {
+    top: 47px;
+}
+
+.comment_indicator {
+    position: absolute;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    top: -5px;
+    left: 105px;
+
+    background: #DEBFBF;
+}
+
+.question_number {
+    position: absolute;
+    width: 39px;
+    height: 24px;
+    top: 190px;
+    left: 402px;
+
+    font-family: 'Reem Kufi', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #000000;
+}
+
+.likelihood_indicator {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    top: -3px;
+    left: 161px;
+
+    background: grey
+}
