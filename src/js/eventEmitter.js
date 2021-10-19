@@ -17,4 +17,7 @@ class EventEmitter extends Map {
     };
 };
 
-export default EventEmitter;
+const Events = EventEmitter;
+const GlobalEvents = new EventEmitter;
+
+export { Events, GlobalEvents }

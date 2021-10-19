@@ -1,5 +1,5 @@
 import CircularStrip from "./CircularStrip.js";
-import Events from "./eventEmitter.js";
+import { Events, GlobalEvents } from "./eventEmitter.js";
 
 function createOuterBox() {
 
@@ -141,6 +141,10 @@ class AlternativesCard {
                     score.style.background = indicator.get()
                 ) : 0;
         });
+
+        Event.on('alternative', data => {
+            GlobalEvents.em('alternative_change', data);
+        })
 
         Event.on('number', number => corner.innerText = String(number).padStart(2, '0'));
         Event.on('indicator', data => score.style.background =  data.to);
